@@ -1,0 +1,46 @@
+.root {
+  @apply flex flex-col h-screen bg-white;
+}
+
+.footer {
+  @apply bg-white border-t flex items-center justify-between px-4 py-2;
+}
+
+.controls {
+  @apply flex space-x-2;
+}
+
+.controlBtn {
+  @apply flex items-center justify-center w-10 h-10 rounded-full;
+  &:not(.controlBtnActive) {
+    @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+  }
+}
+
+.controlBtnActive {
+  @apply bg-red-500 text-white;
+}
+
+.footerControls {
+  @apply flex space-x-4;
+}
+
+.footerControl {
+  @apply relative flex flex-col items-center;
+}
+
+.icon {
+  @apply text-2xl;
+}
+
+.label {
+  @apply text-xs text-gray-600;
+}
+
+.badge {
+  @apply absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center;
+}
+
+.endBtn {
+  @apply bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600;
+}
